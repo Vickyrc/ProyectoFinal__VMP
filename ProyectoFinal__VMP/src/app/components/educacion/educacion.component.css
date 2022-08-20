@@ -1,0 +1,45 @@
+.mat-card#third-card{
+  padding: 1rem;
+  margin: 2rem;
+  margin-top: 5rem;
+  background-color: #6f859b;
+  border-radius: 32px;
+  box-shadow: 3px 3px 3px 3px ;
+ 
+}
+
+#info-data{
+  margin-top: 10px;
+  font-stretch: normal;
+
+}
+.row{
+  padding: 20px;
+  margin-right: 10px;
+}
+
+#edmondo{
+  border-radius: 100%;
+  margin: 10px;
+}
+
+#uca{
+  border-radius: 100%;
+  margin: 5px;
+}
+
+.mat-card#fourth-card{
+  padding: 1rem;
+  margin: 1rem;
+  margin-top: 2rem;
+  background-color: #e3bab3;
+  border-radius: 32px;
+  justify-content: right;
+   box-shadow: 3px 3px 3px 3px ;
+}
+
+[data-aos^=fade][data-aos^=fade].aos-animate {
+  opacity: 15;
+  transform: translateZ(0);
+}
+

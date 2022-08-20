@@ -1,0 +1,31 @@
+.row{
+  padding:20px;
+}
+
+
+.mat-card#fifth-card{
+  padding: 1rem;
+  margin: 2rem;
+  margin-top: 5rem;
+  background-color: #c9d1de;
+  border-radius: 32px;
+  box-shadow: 3px 3px 3px 3px ;
+  flex-direction:column;
+  text-align:justify;
+
+}
+
+[data-aos^=fade][data-aos^=fade].aos-animate {
+  opacity: 15;
+  transform: translateZ(0);
+}
+
+#logoP{
+  width: 10rem;
+}
+
+.img-proyecto{
+  border-radius: 9%;
+  box-shadow: 10px 10px 30px black;
+}
+

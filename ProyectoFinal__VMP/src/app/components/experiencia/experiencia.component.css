@@ -1,0 +1,27 @@
+.mat-card#second-card{
+  padding: 1rem;
+  margin: 2rem;
+  margin-top: 1rem;
+  background-color: #6f859b;
+  border-radius: 32px;
+  box-shadow: 3px 3px 3px 3px ;
+ 
+  
+
+}
+
+#info-data{
+  margin-top: 10px;
+  font-stretch: normal;
+
+}
+.row{
+  padding: 30px;
+  margin-right: 15px;
+
+}
+
+[data-aos^=fade][data-aos^=fade].aos-animate {
+  opacity: 15;
+  transform: translateZ(0);
+}

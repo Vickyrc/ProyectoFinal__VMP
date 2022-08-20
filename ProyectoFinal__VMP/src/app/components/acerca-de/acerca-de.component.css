@@ -1,0 +1,72 @@
+.row{
+  padding: 20px;
+
+}
+
+[data-aos^=fade][data-aos^=fade].aos-animate {
+  opacity: 15;
+  transform: translateZ(0);
+}
+
+/*Estilo de la foto de perfil*/
+@media (min-width:576px){
+  #fotoperfil{
+    position:absolute;
+    width: 15%;
+    border-radius: 40%;
+    box-shadow: 3px 3px 3px grey;
+    margin-top:-150px;
+    left: 3%;
+    top: 650px;
+  }
+}
+
+@media (max-width:575px){
+  #fotoperfil{
+    position:absolute;
+    width: 24%;
+    border-radius: 40%;
+    box-shadow: 3px 3px 3px grey;
+    margin-top: -150px;
+    left: 40%;
+    top: 800px;
+  }
+}
+
+.mat-card{
+  padding: 1rem;
+  margin: 4rem;
+  background-color: #e3bab3;
+  border-radius: 32px;
+  box-shadow: 3px 3px 3px 3px ;
+
+
+}
+
+#info-data{
+  margin-top: 30px;
+  font-stretch: normal;
+
+}
+/*etiqueta nombre*/
+#nombre{
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+h1{
+  color: black;
+}
+
+#info-company{
+  color:black;
+}
+#info-contact{
+  color:black;
+}
+
+#infoc{
+  color:#e3bab3;
+
+
+}
