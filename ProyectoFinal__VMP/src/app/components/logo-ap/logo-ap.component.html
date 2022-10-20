@@ -9,7 +9,8 @@
       <a href="https://ar.linkedin.com/" target="_blank" rel="noopener noreferrer" ><img src="./../../../assets/linkedin1.jpg" id="linkedin"></a>
       <a href="https://outlook.live.com/owa/" target="_blank" rel="noopener noreferrer" ><img src="./../../../assets/mail1.png" id="mail"></a>
       <a href="https://github.com/Vickyrc" target="_blank" rel="noopener noreferrer" ><img src="./../../../assets/github1.png" id="github"></a>
-      <button type="button" class="btn btn-outline-light"> Ingreso</button>
+      <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged"> Iniciar Sesión</button>
+      <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged"> Cerrar Sesión</button>
   </div>
 
 </div>

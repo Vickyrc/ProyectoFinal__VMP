@@ -1,48 +1,39 @@
 <div class="row">
-  <div class="col-lg-6" data-aos="fade-down" data-aos-duration="2000">
-  <div class="card mat-card" id="third-card">
-   
-          <div class="card-titles">
-            <h2><u>Educación</u></h2>
-          </div>
-          <div id="texto-educacion">
-            <ul id="educacion">
-              <li> <img src="./../../../assets/logo_edmondo.jpeg" width="50" height="50" alt="" id="edmondo">
-                <u>Educación primaria y secundaria:</u>
-                <p>Colegio bilingüe Edmondo de Amicis, 1999-2010</p>
-              </li>
-              <li><img src="./../../../assets/uca.png"  width="60" height="60" alt="" id="uca">
-                <u>Educación Universitaria:</u>
-                <p>Universidad Católica Argentina, 2011-2016</p>
-              </li>
-            </ul>
-          
-           
-          </div>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-duration="2000">
-           <div class="d-flex flex-row-reverse bd-highlight">
-            <div class="card mat-card" id="fourth-card">
-          <h2><u>Cursos y especializaciones:</u></h2>
-          <ul>
-            <li><p>Curso de Asistente jurídico, 2014, I.C.R Rosario</p></li>
-              <li><p>Especialización en derecho deportivo, 2015, Universidad Católica argentina</p></li>
-              <li><p>Posgrado el procesos de familia, 2018, Universidad Nacional del Litoral</p></li>
-              <li><p>Diplomado en derecho civil argentino, 2020, Universidad de la Pampa</p></li>
-              <li><p>Curso en ciberdelito y evidencia digital, 2020, Universidad Católica Argentina</p></li>
-              <li><p>Curso de Mandatario Nacional del Automotor, 2021, ICIEC</p></li>
-              <li><p>Curso de Full Stack Developer Jr. Argentina Programa, 2022</p></li>
 
-          </ul>
+  <table class="table">
+    <div class="col-xs-11 col-sm-10 col-md-10 col-lg-10" data-aos="fade-up-right" data-aos-duration="2000">
+      <div class="card mat-card" id="third-card">
+        <div class="card-titles">
+          <h1><u>Educación</u></h1>
+
+
+          <tbody>
+            <tr *ngFor="let Educacion of educacion ">
+              <td>{{Educacion.nombreE}}</td>
+              <td>{{Educacion.descripcionE}}</td>
+
+
+              <td *ngIf="isLogged">
+                <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
+                  <i class="bi bi-pencil"></i><b>Editar</b></button>
+              </td>
+
+              <td *ngIf="isLogged">
+                <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                  <i class="bi bi-trash3"></i><b>Borrar</b></button>
+              </td>
+            </tr>
+          </tbody>
+
         </div>
-          </div>
-         
-  </div>
- 
 
+        <div class="col-lg-4">
+          <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+            Agregar Educación
+          </button>
+        </div>
+      </div>
+    </div>
 
-
-
-
-
+  </table>
+</div>

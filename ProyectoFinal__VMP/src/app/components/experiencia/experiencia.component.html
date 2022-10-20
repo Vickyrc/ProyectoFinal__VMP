@@ -1,31 +1,42 @@
-<div class="d-flex flex-row-reverse bd-highlight">
-  <div class= "col-xs-11 col-sm-8 col-md-8 col-lg-8" data-aos="fade-up-left" data-aos-duration="2000">
-  <div class="card mat-card" id="second-card">
-    <div class="card-titles">
-        <div class="card-titles">
-          <h2><u>Experiencia</u> </h2>
+<div class="row">
+
+  <table class="table">
+    <div class="d-flex flex-row-reverse bd-highlight">
+      <div class="col-xs-11 col-sm-8 col-md-8 col-lg-8" data-aos="fade-up-left" data-aos-duration="2000">
+        <div class="card mat-card" id="second-card">
+          <div class="card-titles">
+
+            <h1><u>Experiencia laboral</u></h1>
+
+
+            <tbody>
+              <tr *ngFor="let Experiencia of expe">
+                <td>{{Experiencia.nombreE}}</td>
+                <td>{{Experiencia.descripcionE}}</td>
+                <td *ngIf="isLogged">
+                  <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
+                    <i class="bi bi-pencil"></i><b>Editar</b></button>
+                </td>
+
+                <td *ngIf="isLogged">
+                  <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+                    <i class="bi bi-trash3"></i><b>Borrar</b></button>
+                </td>
+              </tr>
+            </tbody>
+
+
+          </div>
+
+          <div class="col-lg-6">
+            <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+              Nueva Experiencia
+            </button>
+          </div>
+
         </div>
-        <div id="texto-experiencia">
-          <ul id="experiencia">
-            <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#f2e8e2" class="bi bi-headset" viewBox="0 0 16 16">
-              <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
-            </svg><u>Secretaria en estudio jurídico:</u> (2016-2018)</li>
-            <p>Trámites en tribunales, redacción de escritos.</p>
-            <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#f2e8e2" class="bi bi-camera-reels" viewBox="0 0 16 16">
-              <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"/>
-              <path d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7zm6 8.73V7.27l-3.5 1.555v4.35l3.5 1.556zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z"/>
-              <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-            </svg>
-              <u>Editora de video para Rally Santafesino:</u> (2021-2022)</li>
-            <p>Filmación y edición de videos para las páginas del rally de la Provincia de Santa Fe.</p>
-          </ul>
-        
-   
-        </div>
-  </div>
+      </div>
+    </div>
+  </table>
+
 </div>
-
-
-
-
-

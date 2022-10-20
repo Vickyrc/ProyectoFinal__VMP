@@ -5,8 +5,8 @@
   background-color: #6f859b;
   border-radius: 32px;
   box-shadow: 3px 3px 3px 3px ;
- 
-  
+
+
 
 }
 
@@ -25,3 +25,20 @@
   opacity: 15;
   transform: translateZ(0);
 }
+
+td{
+  width: 20%
+}
+
+table{
+  width: 150%
+}
+
+.button{
+  padding:5px;
+
+}
+
+
+
+
