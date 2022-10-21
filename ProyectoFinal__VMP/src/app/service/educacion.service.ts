@@ -31,5 +31,5 @@ export class EducacionService {
   public delete(id: number): Observable<any>{
     return this.httpClient.delete<any>(this. URL + `delete/${id}`);
   }
-  
+
 }
