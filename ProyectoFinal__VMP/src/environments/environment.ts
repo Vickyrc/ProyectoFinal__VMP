@@ -3,7 +3,19 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  firebase: {
+    projectId: 'portfoliovmp',
+    appId: '1:950248625685:web:1427f183b489ef0999201c',
+    storageBucket: 'portfoliovmp.appspot.com',
+    locationId: 'southamerica-east1',
+    apiKey: 'AIzaSyC2MtWiWebLeC5ONwh6A4rbhL2Wz44zYOw',
+    authDomain: 'portfoliovmp.firebaseapp.com',
+    messagingSenderId: '950248625685',
+  },
+  production: false,
+
+  URL: 'http://localhost:8080/',
+  //URL: 'DIRECCION QUE CORRESPONDE A LA PRODUCCION DEL PROYECTOX'
 };
 
 /*
